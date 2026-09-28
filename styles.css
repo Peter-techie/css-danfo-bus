@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px 10px;
+}
+.title {
+  color: #FFD400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.caption {
+  color: #ccc;
+  margin-top: 20px;
+  font-style: italic;
+}
+.scene {
+  position: relative;
+  width: 500px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid #333;
+}
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #87ceeb 0%, #cceeff 70%);
+}
+.sun {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffdd55;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 10px rgba(255, 221, 85, 0.6);
+}
+.cloud {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50px;
+  opacity: 0.9;
+}
+.cloud-1 {
+  top: 40px;
+  left: 40px;
+  width: 80px;
+  height: 25px;
+}
+.cloud-2 {
+  top: 70px;
+  left: 130px;
+  width: 60px;
+  height: 20px;
+}
+.road {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #4a4a4a;
+}
+.road-line {
+  position: absolute;
+  bottom: 44px;
+  width: 40px;
+  height: 6px;
+  background-color: #ffd400;
+  border-radius: 3px;
+}
+.line-1 { left: 20px; }
+.line-2 { left: 220px; }
+.line-3 { left: 420px; }
+.danfo-bus {
+  position: absolute;
+  bottom: 70px;
+  left: 50px;
+  width: 400px;
+  height: 190px;
+  border: 2px solid #333;
+}
+.bus-roof {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 340px;
+  height: 40px;
+  background-color: #e6c200;
+  border: 2px solid #111;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 20px;
+}
+.bus-body {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 380px;
+  height: 130px;
+  background-color: #ffd400;
+  border: 2px solid #111;
+  border-radius: 12px;
+}
+.bus-stripe {
+  position: absolute;
+  left: 0;
+  width: 380px;
+  height: 14px;
+  background-color: #111;
+}
+.stripe-top {
+  top: 55px;
+}
+
+.stripe-bottom {
+  top: 120px;
+}
+.bus-window {
+  position: absolute;
+  top: 40px;
+  height: 45px;
+  background-color: #a8e0f0;
+  border: 2px solid #111;
+  border-radius: 6px;
+}
+.front-window {
+  left: 20px;
+  width: 55px;
+}
+
+.mid-window {
+  left: 95px;
+  width: 100px;
+}
+
+.back-window {
+  left: 215px;
+  width: 100px;
+}
+.bus-door {
+  position: absolute;
+  top: 70px;
+  left: 330px;
+  width: 45px;
+  height: 90px;
+  background-color: #e6c200;
+  border: 2px solid #111;
+  border-top-right-radius: 8px;
+}
+.door-handle {
+  position: absolute;
+  top: 110px;
+  left: 345px;
+  width: 14px;
+  height: 4px;
+  background-color: #111;
+  border-radius: 2px;
+}
+.number-plate {
+  position: absolute;
+  top: 135px;
+  left: 130px;
+  width: 90px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #111;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 16px;
+  color: #111;
+}
+.headlight {
+  position: absolute;
+  top: 95px;
+  left: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff9c4;
+  border: 2px solid #111;
+  border-radius: 50%;
+}
+.taillight {
+  position: absolute;
+  top: 95px;
+  left: 368px;
+  width: 12px;
+  height: 16px;
+  background-color: #c0392b;
+  border: 2px solid #111;
+  border-radius: 3px;
+}
+.bumper {
+  position: absolute;
+  bottom: 8px;
+  left: -5px;
+  width: 390px;
+  height: 10px;
+  background-color: #555;
+  border-radius: 4px;
+}
+.wing-mirror {
+  position: absolute;
+  top: 55px;
+  left: -8px;
+  width: 14px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 2px;
+}
+.wheel {
+  position: absolute;
+  bottom: -25px;
+  width: 60px;
+  height: 60px;
+  background-color: #111;
+  border-radius: 50%;
+  border: 3px solid #444;
+}
+.front-wheel {
+  left: 40px;
+}
+
+.back-wheel {
+  left: 280px;
+}
+.hubcap {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #999;
+  border-radius: 50%;
+  border: 2px solid #666;
+}
